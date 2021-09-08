@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body {
+ background-image: url("ca.jpg");
+ }
+</style>
+<script>
+function add(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a + b;
+document.getElementById("answer").value= c;
+}
+function subtract(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a - b;
+document.getElementById("answer").value= c;
+}
+function multiply(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a * b;
+document.getElementById("answer").value= c;
+}
+function divide(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a / b;
+document.getElementById("answer").value= c;
+}
+</script>
+</head>
+<body>
+<u><center><h1>Small caculator</h1></center></u>
+<b>Enter the First number :</b> <input id="first"><br>
+<b>Enter the Second number: <b><input id="second"><br>
+<button onclick="add()">Add</button>
+<button onclick="subtract()">subtract</button>
+<button onclick="multiply()">multiply</button>
+<button onclick="divide()">divide</button><br>
+
+<input id="answer">
+</body>
+</html
