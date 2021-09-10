@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Jquery</title>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script>
+$(document).ready(function(){
+$('#btn1').click(function(){
+$('p').toggle(1000);
+});
+$('#btn2').click(function(){
+$('#pqr').append('nonu');
+});
+$('#btn3').dblclick(function(){
+$('a').attr('href','https://www.google.co.in/');
+});
+$('input').keydown(function(event){
+if(event.which==74)
+event.preventDefault();
+});
+$('#btn4').click(function(){
+$('li').append($('<li>input</li>').val());
+});
+
+});
+</script>
+</head>
+<body>
+<a href="https://www.kiet.edu">click here</a>
+<br>
+helllo everyone
+<h1 style="font-color:red" id="abc">
+most welcome <br> ok take care
+</h1>
+njnff
+<p>andndnqndjwjed</p>
+<p id="pqr">wejndndnkwndfs</p>
+<p class="cls">wkdjnwndnwjkdw</p>
+<button id="btn1">toggle</button><button id="btn2">append</button>
+<button id="btn3">change url</button>
+<input type="text" id="o">
+<button id="btn4">ADD</button>
+<ol>
+<li>bananas</li>
+</ol>
+</body>
+</html>
